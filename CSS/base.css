@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variaveis */
+:root {
+    --branco: #fff;
+    --cinza-claro: #C3C2C0;
+    --cinza: #717373;
+    --preto-claro: #1E1E1E;
+    --preto: #000;
+    --shadow: #00000063 0px 5px 20px;
+}
+
+/* Fontes */
+
+@font-face {
+    font-family: 'NY';
+    src: url('/FONTS/NewYork\ PERSONAL\ USE.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LarkeRegular';
+    src: url('../FONTS/Larke\ Neue\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LarkeBold';
+    src: url('../fonts/Larke\ Neue\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LarkeThin';
+    src: url('../fonts/Larke\ Neue\ Thin.ttf') format('truetype');
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Estilo para impedir de selecionar imagens e arrastá-las pela tela */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Barra de rolagem */
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--preto);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cinza);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: none;
+    /* creates padding around scroll thumb */
+}
+
+/* Animações */
+/* Animação 1 - De ladinho*/
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+/* Animação 2 - De baixo*/
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    transition: all 1s;
+}
