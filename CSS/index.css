@@ -168,11 +168,11 @@ nav img {
 
     display: block;
     transition: 300ms;
-    border: 1px solid var(--branco);
 }
 
 .tatuagens-container:hover img {
     opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .tatuagens-container p {
@@ -205,6 +205,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .div2 {
@@ -218,6 +219,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .div3 {
@@ -232,6 +234,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .div10 {
@@ -246,6 +249,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .div11 {
@@ -261,6 +265,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .div12 {
@@ -275,6 +280,7 @@ nav img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid var(--branco);
 }
 
 .tatuagens-button button {
