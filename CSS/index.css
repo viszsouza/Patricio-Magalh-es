@@ -460,10 +460,6 @@ nav img {
     font-family: 'LarkeThin';
 }
 
-
-
-
-
 .text-sobre button{
     background-color: var(--cinza-claro);
     border: none;
@@ -482,4 +478,77 @@ nav img {
     background-color: var(--preto-claro);
     color: var(--branco);
     transform: scale(0.98);
+}
+
+@media (max-width: 910px) {
+    /* Inicio | Header*/
+    .shadow{
+
+        margin-top: 100px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .texts-header h1{
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .texts-header p{
+        width: 100%;
+    }
+
+    .header-buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-buttons a button{
+        width: 100%;
+    }
+
+    /* Tatuagens */
+    .title-tatuagens {
+        flex-direction: column;
+    }
+
+    .title-tatuagens h1{
+        padding-right: 0px;
+        border-right: none;
+
+        border-bottom: 2px solid var(--branco);
+    }
+
+    .title-tatuagens p {
+        padding-left: 0px;
+    }
+
+    .tatuagens-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .div3 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .div11{
+        width: 96%;
+    }
+
+    .div12{
+        grid-column-start: 1;   
+        grid-row-start: 5;
+    }
+
+    /* Depoimentos */
+    .depoimentos {
+        flex-direction: column;
+    }
+
+    .depoimentos-text{
+        width: 100%;
+    }
 }
